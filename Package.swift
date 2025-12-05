@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "integration-swift-firebase",
+    name: "RudderIntegrationFirebase",
     platforms: [
         .iOS(.v15),
         .macOS(.v12),
