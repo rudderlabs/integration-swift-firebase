@@ -81,8 +81,15 @@ let package = Package(
 This integration supports Firebase iOS SDK version:
 
 ```
-12.5.0+
+>=13.0.0, <14.0.0
 ```
+
+### Migrating to 3.0.0
+
+Version 3.0.0 requires Firebase iOS SDK 13 (`>=13.0.0, <14.0.0`), replacing 12.x. Build with Xcode 26.2 or later; Firebase iOS SDK 13 requires it.
+
+- If your app does not add Firebase itself, update the integration. No other change is needed.
+- If your app adds Firebase itself, change that requirement to 13.x. Check the breaking changes in the [Firebase iOS release notes](https://firebase.google.com/support/release-notes/ios).
 
 ### Platform Support
 
@@ -154,4 +161,4 @@ For more information:
 
 ## Report issues / contribute
 
-This repository only publishes releases; it does not accept pull requests. To report a bug or request a feature, [open an issue](https://github.com/rudderlabs/integration-swift-firebase/issues). See [CONTRIBUTING.md](CONTRIBUTING.md).
+This repository is read-only: it only publishes releases of this package from [rudder-monorepo-swift](https://github.com/rudderlabs/rudder-monorepo-swift). It does not accept issues or pull requests. To report a bug or request a feature, [open an issue in rudder-monorepo-swift](https://github.com/rudderlabs/rudder-monorepo-swift/issues/new/choose). See [CONTRIBUTING.md](CONTRIBUTING.md).
